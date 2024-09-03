@@ -1,0 +1,30 @@
+### HTML
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Menu Interativo</title>
+ <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ <nav class="menu">
+ <ul>
+ <li><a href="#">Cadastro</a>
+ <ul class="submenu">
+ <li><a href="#">Cliente</a></li>
+ </ul>
+ </li>
+ <li><a href="#">Lançamento</a></li>
+ <li><a href="#">Relatórios</a>
+ <ul class="submenu">
+ <li><a href="#">Lista de clientes</a></li>
+ <li><a href="#">Lista cidades/estado</a></li>
+ </ul>
+ </li>
+ </ul>
+ </nav>
+ <script src="scripts.js"></script>
+</body>
+</html>
