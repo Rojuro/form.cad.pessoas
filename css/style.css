@@ -30,7 +30,7 @@ body {
 }
 
 .menu ul li a:hover {
-  background-color: #2c5fb2;
+  background-color: #b22c90;
 }
 
 .menu ul li .submenu {
@@ -54,5 +54,5 @@ body {
 }
 
 .menu ul li .submenu li a:hover {
-  background-color: #2c5fb2;
+  background-color: #c919e0;
 }
