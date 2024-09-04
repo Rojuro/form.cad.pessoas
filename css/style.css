@@ -1,58 +1,78 @@
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  margin: 0;
-  padding: 0;
-}
+/* CSS (style.css):
+Adicione um estilo básico para o menu e submenus. O exemplo abaixo oculta submenus por padrão e os exibe ao passar o mouse sobre o item pai. */
 
-.menu {
-  background-color: #4c51b8;
-  overflow: hidden;
+
+body {
+  background-color: #a09999;
+  font-family: Arial, sans-serif;
 }
 
 .menu ul {
-  list-style-type: none;
-  margin: 0;
+  list-style: none;
   padding: 0;
+  margin: 0;
 }
 
-.menu ul li {
-  float: left;
+.menu > ul > li {
   position: relative;
+  display: inline-block;
+  margin-right: 20px;
 }
 
-.menu ul li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
+.menu a { /* itens do menu (Cadastro | Lançamentos | Relatórios) */  
   text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+  color: #ffffff;
 }
 
-.menu ul li a:hover {
-  background-color: #b22c90;
+/* minha modificação do campo dos menus */
+.menu {
+  background-color: black;
 }
+/* --------------- */
 
-.menu ul li .submenu {
+.menu .submenu {
   display: none;
   position: absolute;
-  background-color: #2c5fb2;
-  min-width: 160px;
-  z-index: 1;
+  top: 100%;
+  left: 0;
+  background-color: #f9f9f9;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.menu ul li .submenu li {
-  float: none;
-}
-
-.menu ul li:hover .submenu {
+.menu .submenu li {
   display: block;
 }
 
-.menu ul li .submenu li a {
-  padding: 12px 16px;
+.menu .submenu a {
+  padding: 10px 15px;
+  color: #333;
 }
 
-.menu ul li .submenu li a:hover {
-  background-color: #c919e0;
+.menu li:hover .submenu {
+  display: block;
+}
+
+/* minha modificação do campo dos menus */
+#client:hover {
+  background-color: blue;  
+}
+
+#listclient:hover {
+  background-color: blue;
+}
+
+#listcidade:hover {
+  background-color: blue;
+}
+.submenu > li :hover {
+  color: white;
+}
+/* --------------- */
+
+/* CSS para Submenu visível:
+Você precisa de um estilo para exibir o submenu quando ele tem a classe visible. */
+.submenu.visible {
+  display: block;
 }

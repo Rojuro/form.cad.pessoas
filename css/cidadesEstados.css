@@ -1,0 +1,99 @@
+/* Estilos globais para o corpo da página */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Centraliza o conteúdo verticalmente */
+}
+
+/* Container principal do formulário */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Alinhamento centralizado */
+}
+
+/* Caixa que envolve o formulário */
+.form-box {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 350px; /* Define uma largura fixa para o formulário */
+}
+
+/* Estilo para o título */
+.form-box h1 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Grupo de inputs com margem inferior */
+.input-group {
+    margin-bottom: 15px;
+}
+
+/* Estilos para os rótulos dos campos */
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Estilos para os inputs de texto */
+.input-group input,
+.input-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box; /* Inclui padding e bordas na largura */
+}
+
+/* Estilo base para os botões */
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px; /* Espaçamento entre os botões e os campos */
+}
+
+/* Estilo comum para todos os botões */
+.button-group .btn {
+    padding: 10px 15px;
+    font-size: 14px;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 48%; /* Largura para garantir espaçamento uniforme */
+}
+
+/* Botão de confirmação com cor verde */
+.btn-confirm {
+    background-color: #4CAF50;
+}
+
+/* Efeito de hover para o botão de confirmação */
+.btn-confirm:hover {
+    background-color: #45a049;
+}
+
+/* Botão de retorno com cor vermelha */
+.btn-return {
+    background-color: #f44336;
+}
+
+/* Efeito de hover para o botão de retorno */
+.btn-return:hover {
+    background-color: #e53935;
+}

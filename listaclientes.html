@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/listaclientes.css">
+    <title>Versão 3.0</title>
+</head>
+    
+<body>
+    <div class="container">
+        <div class="form">
+            <div class="header">
+                <h1>Lista de Clientes</h1>
+                <p>Preencha o formulário abaixo:</p>
+            </div>
+
+            <form>
+                <fieldset>
+                    <legend><strong>Dados Pessoa Física</strong></legend>
+                    <div class="form_PF">
+                        <label for="nome">Nome Completo</label>
+                        <input type="text" name="nome" id="nome" placeholder="Digite seu nome completo...">
+                    </div>
+
+                    <div class="form_PF">
+                        <label for="cpf">CPF</label>
+                        <input type="text" name="cpf" id="cpf" placeholder="Digite seu CPF...">
+                    </div>
+
+                    <div class="form_PF">
+                        <label for="data">Data de Nascimento</label>
+                        <input type="date" name="data" id="data">
+                    </div>
+
+                    <div class="form_PF">
+                        <label for="email">Endereço de E-mail</label>
+                        <input type="email" name="email" id="email" placeholder="Digite seu e-mail...">
+                    </div>
+
+                    <div class="form_PF">
+                        <label for="telefone">Telefone / Whatsapp</label>
+                        <input type="text" name="telefone" id="telefone" placeholder="Digite seu telefone...">
+                    </div>
+                </fieldset> 
+            </form>
+
+            <form>
+                <fieldset>
+                    <legend><strong>Endereço</strong></legend>
+                    <div class="endereco">
+                        <input type="text" name="rua" id="rua" placeholder="Av/Rua">
+                        <input type="text" name="bairro" id="bairro" placeholder="Bairro/Setor">
+                        <input type="text" name="cidade" id="cidade" placeholder="Cidade/Estado">
+                        <input type="text" name="cep" id="cep" placeholder="CEP">
+                        <input type="text" name="complemento" id="complemento" placeholder="Complemento">
+                        <input type="text" name="telefone_residencial" id="telefone_residencial" placeholder="Telefone Residencial">
+                    </div>
+                </fieldset>
+            </form>
+        
+            <form>
+                <fieldset>
+                    <legend><strong>Redes Sociais</strong></legend>
+                    <div class="social">
+                        <input type="text" name="facebook" id="facebook" placeholder="Facebook">
+                        <input type="text" name="instagram" id="instagram" placeholder="Instagram">
+                        <input type="text" name="linkedin" id="linkedin" placeholder="LinkedIn">
+                    </div>
+                </fieldset>
+            </form>
+
+            <form>
+                <fieldset>
+                    <legend><strong>Informações Complementares</strong></legend>
+                    <div class="complemento">
+                        <label for="vinculo"><p>O/A Sr(a) possui vínculo, mesmo informal, com alguma organização (clube, grupo, projeto, etc) ou equipamento (observatório, planetário, etc) de pesquisa ou divulgação de Astronomia?</p></label>
+
+                        <div class="sim_nao">
+                            <label>
+                                <input type="radio" name="vinculo" value="Sim"> Sim
+                            </label>
+                            <label>
+                                <input type="radio" name="vinculo" value="Nao"> Não
+                            </label>  
+                        </div>
+
+                        <div class="empresa">
+                            <label for="empresa"><p>Em caso de vínculo, informe o nome da organização ou equipamento o qual pertence ou representa</p></label>
+                            <input type="text" name="empresa" id="empresa" placeholder="Digite sua mensagem">
+                        </div>
+
+                        <div class="tempo">
+                            <label for="tempo"><p>Há quanto tempo (exato ou aproximadamente) o/a Sr(a) faz parte da organização ou equipamento?</p></label>
+                            <input type="text" name="tempo" id="tempo" placeholder="Digite sua mensagem">
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+            <div class="buttonP">
+                <button class="btn btn-confirm" type="submit">Confirmar</button>
+                <button class="btn btn-return" type="button" onclick="window.history.back()">Retornar</button>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
